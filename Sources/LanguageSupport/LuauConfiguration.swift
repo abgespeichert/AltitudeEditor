@@ -42,15 +42,13 @@ extension LanguageConfiguration {
     let identifierRegex: Regex<Substring> = Regex {
       CharacterClass(
         ("a"..."z"),
-        ("A"..."Z"),
-        "_"
+        ("A"..."Z")
       )
       ZeroOrMore {
         CharacterClass(
           ("a"..."z"),
           ("A"..."Z"),
-          ("0"..."9"),
-          "_"
+          ("0"..."9")
         )
       }
     }
